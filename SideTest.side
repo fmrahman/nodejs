@@ -1,0 +1,114 @@
+{
+  "id": "a4dcf82a-63f9-4b15-a9a8-923354d8e01e",
+  "version": "2.0",
+  "name": "nodejs",
+  "url": "http://localhost:8081",
+  "tests": [{
+    "id": "53a1fa94-aad3-4d1a-a8ec-43d53800d987",
+    "name": "nodejs",
+    "commands": [{
+      "id": "eaca93f0-1c4a-4fae-9a1f-113480cd6281",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cea71487-f278-4e53-bebc-36d7b11d4ead",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1176x586",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d872562d-59b5-46f1-beff-6068dd57d85a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=pre",
+      "targets": [
+        ["css=pre", "css:finder"],
+        ["xpath=//pre", "xpath:position"],
+        ["xpath=//pre[contains(.,'Hello World\n')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d89d447c-9839-4d43-b356-ad9084c8a053",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=pre",
+      "targets": [
+        ["css=pre", "css:finder"],
+        ["xpath=//pre", "xpath:position"],
+        ["xpath=//pre[contains(.,'Hello World\n')]", "xpath:innerText"]
+      ],
+      "value": "Hello World!"
+    }, {
+      "id": "feed8a95-4479-482f-93db-216536bf286d",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4527477a-08f5-4687-b100-6bc40dfc20a7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=pre",
+      "targets": [
+        ["css=pre", "css:finder"],
+        ["xpath=//pre", "xpath:position"],
+        ["xpath=//pre[contains(.,'Hello World\n')]", "xpath:innerText"]
+      ],
+      "value": "Hello World!"
+    }, {
+      "id": "900a07d1-a14b-4a56-b9f7-383077bbd583",
+      "comment": "",
+      "command": "waitForText",
+      "target": "css=pre",
+      "targets": [
+        ["css=pre", "css:finder"],
+        ["xpath=//pre", "xpath:position"],
+        ["xpath=//pre[contains(.,'Hello World\n')]", "xpath:innerText"]
+      ],
+      "value": "Hello World!"
+    }, {
+      "id": "e19bb5d1-bc60-4791-8819-7b7cd046b5b2",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "e4fc652c-0ddc-4c60-80ef-20a565399f39",
+      "comment": "",
+      "command": "echo",
+      "target": "old",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a25942fd-98f8-468d-bac7-5b96d8466afb",
+      "comment": "",
+      "command": "pause",
+      "target": "1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a206f40-fd01-4342-8756-fac5d42cc3bf",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f6a02453-e658-4b4c-bf21-8a753b606002",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["53a1fa94-aad3-4d1a-a8ec-43d53800d987"]
+  }],
+  "urls": ["http://localhost:8081/"],
+  "plugins": []
+}
